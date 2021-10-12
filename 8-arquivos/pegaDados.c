@@ -58,7 +58,6 @@ int main(void){
 
 	pula();
 
-
 	system("pause");
 
 	return 0;

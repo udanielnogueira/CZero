@@ -29,8 +29,8 @@ int main(void){
     dataDaniel.ano=2016;
 
     alunos[0].nascimento=dataDaniel;
-    //ou atribuisse diretamente: daniel.nascimento.dia ...
-    //ao inves de criar uma estrutura do tipo Data e atribuir a minha estrutura daniel
+    /* Or daniel.nascimento.dia, this way I 
+    wouldn't need to create a Data element. */
 
     printf("%s\n", alunos[0].nome);
     printf("%d\n", alunos[0].idade);

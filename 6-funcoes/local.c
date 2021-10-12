@@ -15,7 +15,7 @@ main(){
     return 0;
 }
 
-//i uma variavel local na funcao
+//i is a local variable in the function
 void pares(){
     int i;
     for(i=0; i<=10; i+=2){
@@ -23,7 +23,7 @@ void pares(){
     }
 }
 
-//virg uma varivel local no bloco
+//virg is a local variable in the block
 void impares(){
     int i;
     for(i=1; i<=11; i+=2){

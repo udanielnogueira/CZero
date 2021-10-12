@@ -7,7 +7,7 @@ main()
     while((c=getchar()) == 'c')
     {
         printf("c foi apertado\n");
-        getchar();//tira o <ENTER>
+        getchar(); //it deletes the ENTER key
 
     }
     puts("voce apertou outro\n");

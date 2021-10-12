@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-//prototipo da funcao
-int soma(int x, int y);//ou: int soma(int, int);
+//function's prototype
+int soma(int x, int y); //or int soma(int, int)
 
 int main(int argc , char *argv[]){
 
@@ -13,7 +13,7 @@ int main(int argc , char *argv[]){
     return 0;
 }
 
-//definicao da funcao
+//function's definition
 int soma(int x, int y){
 
     return x+y;

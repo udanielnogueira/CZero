@@ -4,7 +4,7 @@
 
 int main(void){
 
-	//arquivo e variaveis
+	//file and variables
 	FILE* arq;
 	arq = fopen("texto.txt", "a");
 
@@ -13,38 +13,29 @@ int main(void){
 
 	char texto[TAMANHO_TEXTO];
 
-
-	//escrevendo no arquivo
+	//writing 
 	fprintf(arq, "Escrevi uma frase\n");
 	fprintf(arq, "Outra frase com variaveis: %s eh %d\n", nome, numero);
 
-	//fechando e salvando oque acabou de ser escrito
+	//closing
 	fclose(arq);
 
-	
-	
-
-	//preparando arquivo para ler
+	//preparing to read
 	arq = fopen("texto.txt", "r");
 	
-	//lendo oque esta salvo no arquivo
+	//reading
 	fgets(texto, TAMANHO_TEXTO, (FILE*) arq);
 	printf("%s", texto);
 
 	fgets(texto, TAMANHO_TEXTO, (FILE*) arq);
 	printf("%s", texto);
 
-	/*
-	printf("Insira uma frase: ");
-	fgets(texto, TAMANHO_TEXTO, stdin);
-	puts(texto, arq);
+	//printf("Insira uma frase: ");
+	//fgets(texto, TAMANHO_TEXTO, stdin);
+	//puts(texto, arq);
+	//It's another way to read and write
 
-	Outra forma de captar um texto
-	E escrever no arquivo
-	*/
-
-
-	//fechando e salvando arquivo
+	//closing and saving
 	fclose(arq);
 
 	system("pause");

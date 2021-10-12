@@ -5,7 +5,7 @@ int main(void){
 
     printf("Qual seu nome: ");
     gets(nome);
-    printf("Bem vindo "); //se aqui fosse puts, pularia na impressao
+    printf("Bem vindo "); //if here was PUTS, it would jump a line
     puts(nome);
 
     printf("\n");

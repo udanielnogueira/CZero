@@ -11,11 +11,8 @@ main(){
     p2 = p1+1;
     printf("ponteiro 2: %d\n", *p2);
 
-    /*
-    Se eu fizesse p2=p1++; p1 ficaria 20 e p2 ficaria 10
-    Se eu fizesse p1++; e depois p2=p1, os dois seriam 20
-    */
-
+    /* If I did p2=p1++, p1 would receive 20 and p2 10.
+    If I did p1++ and after p2=p1, both would receive 20. */
 
     system("pause");
 }
