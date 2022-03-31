@@ -1,2 +1,2 @@
-# CZero
- C Language based on my university classes.
+# C Zero
+ C based on my university classes.
