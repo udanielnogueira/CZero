@@ -3,9 +3,9 @@ main()
 {
     int x;
     int y;
-    double z=1.50;
+    double z = 1.50;
 
-    y = (x=1, y=x+1, y+z);
+    y = (x = 1, y = x + 1, y + z);
     printf("y=%d\n", y);
 
     printf("tamanho de x:%d bytes\n", sizeof x);
@@ -13,7 +13,6 @@ main()
     printf("tamanho de z:%d bytes\n", sizeof z);
     printf("tamanho de int:%d bytes\n", sizeof(int));
     printf("tamanho de double:%d bytes\n", sizeof(double));
-
 
     system("pause");
 }

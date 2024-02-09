@@ -1,19 +1,20 @@
 #include <stdio.h>
 #define DIM 72
 
-void estrelas(int quantidade){
+void estrelas(int quantidade) {
 
 	int i;
-	for(i=0; i<quantidade; i++)
+
+	for(i = 0; i < quantidade; i++)
 		printf("*");
 	printf("\n");
 }
 
-void pula(void){
+void pula(void) {
 	printf("\n");
 }
 
-int main(void){
+int main(void) {
 
 	FILE* arquivo;
 	arquivo = fopen("Listagem BRF.txt", "a");
@@ -23,14 +24,14 @@ int main(void){
 	char continuar;
 
 	pula();
-	estrelas(2*10);
+	estrelas(2 * 10);
 	printf("Bem vindo ao sistema\n");
-	estrelas(10+10);
+	estrelas(10 + 10);
 	pula();
 
 	system("pause");
 
-	do{
+	do {
 
 		system("cls");
 
@@ -47,6 +48,7 @@ int main(void){
 		fprintf(arquivo, "\n\n");
 
 		pula();
+		
 		printf("<s> sim | <n> nao\n");
 		printf("Continuar? ");
 		continuar = getchar();

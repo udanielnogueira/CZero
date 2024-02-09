@@ -2,9 +2,9 @@
 #define DIM 50
 #define TAMANHO_TEXTO 255
 
-int main(void){
+int main(void) {
 
-	//file and variables
+	// File and variable
 	FILE* arq;
 	arq = fopen("texto.txt", "a");
 
@@ -13,28 +13,28 @@ int main(void){
 
 	char texto[TAMANHO_TEXTO];
 
-	//writing 
+	// Writing 
 	fprintf(arq, "Escrevi uma frase\n");
 	fprintf(arq, "Outra frase com variaveis: %s eh %d\n", nome, numero);
 
-	//closing
+	// Closing
 	fclose(arq);
 
-	//preparing to read
+	// Preparing to read
 	arq = fopen("texto.txt", "r");
 	
-	//reading
+	//Reading
 	fgets(texto, TAMANHO_TEXTO, (FILE*) arq);
 	printf("%s", texto);
 
 	fgets(texto, TAMANHO_TEXTO, (FILE*) arq);
 	printf("%s", texto);
 
-	//printf("Insira uma frase: ");
-	//fgets(texto, TAMANHO_TEXTO, stdin);
-	//puts(texto, arq);
-	//It's another way to read and write
-
+	// Another way to read and write	
+	// printf("Insira uma frase: ");
+	// fgets(texto, TAMANHO_TEXTO, stdin);
+	// puts(texto, arq);
+	
 	//closing and saving
 	fclose(arq);
 

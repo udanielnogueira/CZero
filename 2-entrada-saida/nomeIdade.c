@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define DIM 51
-int main(void){
+int main(void) {
 
     char nome[DIM] = "Daniel da Silva Nogueira";
     int idade = 20;
@@ -10,7 +10,4 @@ int main(void){
     system("pause");
 
     return 0;
-
-
-
 }

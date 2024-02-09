@@ -5,10 +5,10 @@ main()
 
     printf("Qual fatorial:");
     scanf("%d", &n);
-    fat=n;
+    fat = n;
 
     printf("%d", n);
-    for(i=fat-1; i>=1; i--)
+    for(i = fat - 1; i >= 1; i--)
     {
         printf("*%d", i);
         fat=fat*i;
@@ -17,6 +17,4 @@ main()
     printf("=%d\n", fat);
 
     system("pause");
-
-
 }

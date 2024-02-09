@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main(void){
+int main(void) {
 
     int numero = 12;
 

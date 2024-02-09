@@ -1,5 +1,5 @@
 #include <stdio.h>
-main(){
+main() {
 
     int i;
     char agenda[4][100] =
@@ -18,6 +18,6 @@ main(){
         }
     };
 
-    for(i=0; i<4; i++)
+    for(i = 0; i < 4; i++)
         printf("%s\n", agenda[i]);
 }

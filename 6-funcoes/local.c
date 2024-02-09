@@ -4,7 +4,7 @@ void pares();
 
 void impares();
 
-main(){
+main() {
 
     pares();
     printf("\n");
@@ -16,7 +16,7 @@ main(){
 }
 
 //i is a local variable in the function
-void pares(){
+void pares() {
     int i;
     for(i=0; i<=10; i+=2){
         printf("%d ", i);
@@ -24,11 +24,11 @@ void pares(){
 }
 
 //virg is a local variable in the block
-void impares(){
+void impares() {
     int i;
-    for(i=1; i<=11; i+=2){
+    for(i = 1; i <= 11; i += 2){
         char virg =',';
-        if(i==11)
+        if(i == 11)
             virg='\0';
         printf("%d%c", i, virg);
 

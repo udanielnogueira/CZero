@@ -1,5 +1,5 @@
 #include <stdio.h>
-main(){
+main() {
 
     char alternativa;
     char pula;
@@ -35,7 +35,5 @@ main(){
         getchar();
 
 
-    }while(pula=='s' || pula=='S');
-
-
+    }while(pula == 's' || pula == 'S');
 }

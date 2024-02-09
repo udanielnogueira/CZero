@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main(void){
+int main(void) {
 
     int ano = 2016;
 
@@ -8,5 +8,4 @@ int main(void){
     system("pause");
 
     return 0;
-
 }

@@ -14,11 +14,11 @@ main()
     letra = getchar();
 
     printf("A letra %c aparece na posicao ", letra);
-    for(i=0; i<strlen(palavra); i++){
-        if(letra == palavra[i]) printf("%d ", i+1);
+    for(i = 0; i < strlen(palavra); i++) {
+        if(letra == palavra[i]) printf("%d ", i + 1);
     }
-    printf("\n");
 
+    printf("\n");
 
     system("pause");
 }

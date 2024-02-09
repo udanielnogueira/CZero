@@ -10,10 +10,10 @@ main()
     gets(frase);
 
     printf("\nDescriptografando...\n");
-    for(i=0; i<strlen(frase); i++)
+    for(i = 0; i < strlen(frase); i++)
     {
-        if(frase[i]!= ' ')
-            frase[i]=frase[i]-1;
+        if(frase[i] != ' ')
+            frase[i] = frase[i] - 1;
     }
     printf("Frase descriptografada\n-> ");
     puts(frase);

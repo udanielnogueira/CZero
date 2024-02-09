@@ -1,36 +1,37 @@
 #include <stdio.h>
 #include <string.h>
 
-struct data{
+struct data {
     int dia, mes, ano;
 };
 typedef struct data Data;
 
-struct aluno{
+struct aluno {
     char nome[50];
     int idade;
     Data nascimento;
 };
 typedef struct aluno Aluno;
 
-int soma(int idade){
-    return idade=idade+1;
+int soma(int idade) {
+    return idade = idade + 1;
 }
 
-int main(void){
+int main(void) {
 
     Aluno alunos[10];
+
     strcpy(alunos[0].nome, "Daniel Nogueira");
-    alunos[0].idade=20;
+    alunos[0].idade = 20;
 
     Data dataDaniel;
-    dataDaniel.dia=20;
-    dataDaniel.mes=03;
-    dataDaniel.ano=2016;
+    dataDaniel.dia = 20;
+    dataDaniel.mes = 03;
+    dataDaniel.ano = 2016;
 
     alunos[0].nascimento=dataDaniel;
-    /* Or daniel.nascimento.dia, this way I 
-    wouldn't need to create a Data element. */
+    // or daniel.nascimento.dia
+    // this way I wouldn't need to create a Data element
 
     printf("%s\n", alunos[0].nome);
     printf("%d\n", alunos[0].idade);
@@ -42,6 +43,3 @@ int main(void){
 
     system("pause");
 }
-
-
-

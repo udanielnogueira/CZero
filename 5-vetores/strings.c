@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <string.h>
-main(){
+main() {
 
-    char nome[50]="Daniel";
-    char sobre[50]="Nogueira";
+    char nome[50] = "Daniel";
+    char sobre[50] = "Nogueira";
     int comp;
     int tamanho;
 

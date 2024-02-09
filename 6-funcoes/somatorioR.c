@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-int somatorio(int num){
-    if(num==1)
+int somatorio(int num) {
+    if(num == 1)
         return num;
     else
-        return num+somatorio(num-1);
+        return num + somatorio(num - 1);
 }
 
 
-main(){
+main() {
 
     printf("%d\n", somatorio(3));
 
@@ -16,4 +16,3 @@ main(){
 
     return 0;
 }
-

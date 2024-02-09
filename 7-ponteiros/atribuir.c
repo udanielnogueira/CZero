@@ -1,5 +1,5 @@
 #include <stdio.h>
-main(){
+main() {
 
     int *p1, *p2;
 
@@ -8,11 +8,11 @@ main(){
     p1 = &vetor[0];
     printf("ponteiro 1: %d\n", *p1);
 
-    p2 = p1+1;
+    p2 = p1 + 1;
     printf("ponteiro 2: %d\n", *p2);
 
-    /* If I did p2=p1++, p1 would receive 20 and p2 10.
-    If I did p1++ and after p2=p1, both would receive 20. */
+    // If I did p2 = p1++, p1 would receive 20 and p2 10.
+    // If I did p1++ and after p2 = p1, both would receive 20.
 
     system("pause");
 }
